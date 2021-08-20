@@ -25,5 +25,10 @@ RUN apt-get update && \
 
 RUN java -version
 
+# Install other utilitaries for e2e tests
+RUN apt update && apt install -y procps
+RUN apt update && apt install -y sshpass
+
+# Do some cleaning
 RUN apt clean
 RUN rm -rf /var/lib/apt/lists/*
