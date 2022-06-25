@@ -3,9 +3,9 @@ FROM debian:stable-slim
 # Install Node.js / npm
 RUN apt-get update -qq
 RUN apt-get install -yy apt-utils wget curl gnupg
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
 	apt-get update -qq && apt-get install -y nodejs && \
-  npm i -g npm@6
+  npm i -g npm@8
 
 RUN node -v
 RUN npm -v

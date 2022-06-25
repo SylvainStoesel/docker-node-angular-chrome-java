@@ -3,7 +3,7 @@
 This Docker image is based on **debian:stable-slim** and is meant for **Angular unit/e2e tests** in CI/CD environments.
 
 It contains:
-  - **Embedded Node 14 + npm 6** to build/run **Angular** application
+  - **Embedded Node 16 + npm 8** to build/run **Angular** application
   - **Google Chrome Headless** (92) preconfigured to run *unit tests* and *e2e tests* of an **Angular** application
   - **Java JRE 11** to run a **WireMock** server
 
